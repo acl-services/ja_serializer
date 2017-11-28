@@ -22,7 +22,7 @@ defmodule JaSerializer.Formatter.Utils do
     |> Enum.into(%{})
   end
 
-  @key_formatter Application.get_env(:ja_serializer, :key_format, :dasherized)
+  @key_formatter Application.get_env(:ja_serializer, :key_format, :underscored)
 
   @doc false
   def deep_format_keys(map) when is_map(map) do
